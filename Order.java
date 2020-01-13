@@ -1,5 +1,3 @@
-import java.text.DecimalFormat;
-
 public class Order {
 
     private Item[] items;
