@@ -4,16 +4,32 @@ public class Item {
     private int sku;
     private int price;
 
-    public Item(String name, int sku, int price) {
+    public static int currentSKU = 0;
+
+    public Item(String name, int price) {
 
         this.name = name;
-        this.sku = sku;
         this.price = price;
+        
+        this.sku = currentSKU;
+        currentSKU++;
 
     }
 
     public int getPrice() {
         return this.price;
+    }
+
+    public void sale(double percent) {
+
+        this.price *= (1.0 - percent);
+
+    }
+
+    public String toString() {
+
+        return ("Item Name: " + this.name + " SKU ID: " + sku + " Price: " + price);
+
     }
 
 }

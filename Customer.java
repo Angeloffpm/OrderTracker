@@ -16,6 +16,19 @@ public class Customer {
 
         this.name = name;
         this.email = email;
+        order = null;
+
+    }
+
+    public void setOrder(Order order) {
+
+        this.order = order;
+
+    }
+
+    public Order getOrder() {
+
+        return this.order;
 
     }
 
