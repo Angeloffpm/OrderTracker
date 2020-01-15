@@ -2,7 +2,7 @@ public class OrderTracker {
 
     public static void main(String[] args) {
         
-        Customer customer1 = new Customer("Carl", "bob@gmail.com");
+        Customer customer1 = new Customer("Bob", "bob@gmail.com");
         Item item1 = new Item("Oranges", 500);
         Item item2 = new Item("Apples", 750);
         Item item3 = new Item("Bananas", 1050);
